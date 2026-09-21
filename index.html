@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1c1a">
+  <meta name="description" content="镜游三河：从真实照片出发，发现三河古镇中真正想去的地方。">
+  <title>镜游三河 · 照片导向旅行发现</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <div class="app-shell">
+    <aside class="rail" aria-label="主导航">
+      <button class="brand-mark" data-view="discover" aria-label="回到发现">
+        <span class="brand-glyph">镜</span>
+      </button>
+      <nav class="rail-nav">
+        <button class="rail-link is-active" data-view="discover" aria-label="发现">
+          <span data-icon="sparkles"></span><em>发现</em>
+        </button>
+        <button class="rail-link" data-view="collection" aria-label="收藏">
+          <span data-icon="heart"></span><em>收藏</em>
+          <b class="nav-count" id="nav-count">0</b>
+        </button>
+        <button class="rail-link" data-view="map" aria-label="地图">
+          <span data-icon="map"></span><em>地图</em>
+        </button>
+      </nav>
+      <button class="rail-link rail-info" id="research-button" aria-label="查看研究记录">
+        <span data-icon="activity"></span><em>记录</em>
+      </button>
+    </aside>
+
+    <main class="main-stage">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">SANHE · PHOTO-LED DISCOVERY</p>
+          <h1>镜游三河</h1>
+        </div>
+        <button class="trust-chip" id="sources-button">
+          <span class="trust-dot"></span>
+          <span>9 张实景 · 7 处地点 · 逐张核验</span>
+          <span data-icon="chevron"></span>
+        </button>
+      </header>
+
+      <section class="view is-active" id="view-discover" aria-label="照片发现">
+        <div class="discover-copy">
+          <span class="section-index">01 / 发现</span>
+          <h2>先被画面吸引，<br><i>再认识一个地方。</i></h2>
+          <p>选择前不显示地点名，减少文字与知名度偏差。凭第一眼感觉收藏或略过即可。</p>
+          <div class="progress-line" aria-label="浏览进度">
+            <span id="progress-fill"></span>
+          </div>
+          <div class="progress-meta">
+            <span id="progress-label">01 / 09</span>
+            <button id="undo-button" class="text-button" disabled>
+              <span data-icon="undo"></span>撤销上一步
+            </button>
+          </div>
+        </div>
+
+        <div class="card-workspace">
+          <div class="card-stack" id="card-stack" aria-live="polite"></div>
+          <div class="decision-controls" id="decision-controls">
+            <button class="decision-button skip" id="skip-button" aria-label="略过这张照片">
+              <span data-icon="x"></span>
+              <span>略过</span>
+              <kbd>←</kbd>
+            </button>
+            <button class="decision-button save" id="save-button" aria-label="收藏这张照片">
+              <span data-icon="heart"></span>
+              <span>想去</span>
+              <kbd>→</kbd>
+            </button>
+          </div>
+          <p class="swipe-hint"><span data-icon="move"></span>也可以拖动照片做决定</p>
+        </div>
+
+        <aside class="insight-panel">
+          <div class="live-label"><span></span>实时生成</div>
+          <h3>你的视觉偏好</h3>
+          <div class="empty-insight" id="empty-insight">
+            <div class="radar-empty">
+              <span></span><span></span><span></span>
+            </div>
+            <p>收藏几张画面后，偏好会在这里浮现。</p>
+          </div>
+          <div class="visual-profile" id="visual-profile" hidden></div>
+          <div class="place-preview">
+            <span>已解锁地点</span>
+            <strong id="place-count">0</strong>
+            <small>/ 7</small>
+          </div>
+          <button class="panel-cta" data-view="map" id="quick-map" disabled>
+            在地图上看见它们
+            <span data-icon="arrow"></span>
+          </button>
+        </aside>
+      </section>
+
+      <section class="view" id="view-collection" aria-label="我的收藏">
+        <div class="section-head">
+          <div>
+            <span class="section-index">02 / 收藏</span>
+            <h2>我想去的画面</h2>
+            <p>照片已经自动还原为真实地点。相同地点会被归在一起。</p>
+          </div>
+          <button class="secondary-button" id="collection-map-button">
+            <span data-icon="map"></span>映射到地图
+          </button>
+        </div>
+        <div class="collection-summary" id="collection-summary"></div>
+        <div class="collection-grid" id="collection-grid"></div>
+        <div class="empty-state" id="collection-empty">
+          <span data-icon="images"></span>
+          <h3>收藏还是空的</h3>
+          <p>先从真实照片里挑几张让你想停下来的画面。</p>
+          <button class="primary-button" data-view="discover">开始选图</button>
+        </div>
+      </section>
+
+      <section class="view" id="view-map" aria-label="地点地图">
+        <div class="section-head map-head">
+          <div>
+            <span class="section-index">03 / 地图</span>
+            <h2>画面落在了哪里</h2>
+            <p>只显示你收藏过的地点。点选标记，继续探索附近体验。</p>
+          </div>
+          <div class="map-legend">
+            <span><i class="dot saved"></i>已收藏</span>
+            <span><i class="dot river"></i>水系</span>
+          </div>
+        </div>
+        <div class="map-layout">
+          <div class="map-frame" id="map-frame">
+            <div class="map-canvas">
+              <img src="./assets/maps/sanhe-handdrawn-map.jpg" alt="三河古镇官方手绘导览图" draggable="false">
+              <div class="map-pins" id="map-pins"></div>
+            </div>
+            <div class="map-empty-overlay" id="map-empty">
+              <span data-icon="pin"></span>
+              <p>收藏照片后，地点会在地图上亮起</p>
+              <button class="primary-button" data-view="discover">去选照片</button>
+            </div>
+            <div class="map-credit">底图：三河古镇景区手绘导览图</div>
+          </div>
+          <aside class="map-list-panel">
+            <div class="map-list-top">
+              <span>你的地点</span>
+              <strong id="map-place-count">0 处</strong>
+            </div>
+            <div class="map-place-list" id="map-place-list"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <nav class="mobile-nav" aria-label="移动端导航">
+    <button class="is-active" data-view="discover"><span data-icon="sparkles"></span><em>发现</em></button>
+    <button data-view="collection"><span data-icon="heart"></span><em>收藏</em><b id="mobile-count">0</b></button>
+    <button data-view="map"><span data-icon="map"></span><em>地图</em></button>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="sheet" id="place-sheet">
+    <button class="sheet-close" data-close="place-sheet" aria-label="关闭"><span data-icon="x"></span></button>
+    <div id="place-sheet-content"></div>
+  </dialog>
+
+  <dialog class="sheet compact-sheet" id="sources-sheet">
+    <button class="sheet-close" data-close="sources-sheet" aria-label="关闭"><span data-icon="x"></span></button>
+    <div class="sheet-kicker">EVIDENCE REGISTER</div>
+    <h2>照片与地点核验册</h2>
+    <p class="sheet-lead">每张照片只绑定其来源页面明确标注的地点；不使用生成图，不将泛古镇图片冒充具体景点。</p>
+    <div class="source-list" id="source-list"></div>
+    <p class="source-note">图片仅用于非商业学术研究原型展示，版权归原作者或来源平台所有。</p>
+  </dialog>
+
+  <dialog class="sheet compact-sheet" id="research-sheet">
+    <button class="sheet-close" data-close="research-sheet" aria-label="关闭"><span data-icon="x"></span></button>
+    <div class="sheet-kicker">RESEARCH MODE</div>
+    <h2>本次选择记录</h2>
+    <p class="sheet-lead">原型在本机记录匿名交互事件，便于后续比较照片导向与景点列表方案；不会上传个人信息。</p>
+    <div class="metric-grid" id="metric-grid"></div>
+    <div class="research-log" id="research-log"></div>
+    <div class="sheet-actions">
+      <button class="secondary-button" id="export-button"><span data-icon="download"></span>导出 JSON</button>
+      <button class="danger-button" id="reset-button"><span data-icon="rotate"></span>重置体验</button>
+    </div>
+  </dialog>
+
+  <div class="onboarding" id="onboarding">
+    <div class="onboarding-card">
+      <div class="mini-brand"><span>镜</span>游三河</div>
+      <div class="onboarding-visual">
+        <img src="./assets/photos/xiaonan-night.jpg" alt="">
+        <span class="gesture left">略过</span>
+        <span class="gesture right">想去</span>
+      </div>
+      <span class="section-index">PHOTO FIRST, PLACE LATER</span>
+      <h2>别先看攻略。<br>先看看什么让你心动。</h2>
+      <p>9 张已核验实景照片，不告诉你它们在哪里。选完后，再把你的偏好变成一张专属地点地图。</p>
+      <button class="primary-button onboarding-start" id="start-button">开始选图 <span data-icon="arrow"></span></button>
+      <small>研究原型 · 数据保存在当前设备</small>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
