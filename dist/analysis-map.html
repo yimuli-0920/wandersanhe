@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f3f0e7">
+  <meta name="description" content="三河古镇小红书固定样本地点分布与证据可视化。">
+  <title>三河古镇 · 样本地点分布</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="./vendor/leaflet.css">
+  <link rel="stylesheet" href="./analysis-map.css">
+</head>
+<body>
+  <header class="map-topbar">
+    <a class="map-brand" href="./index.html" aria-label="返回镜游三河研究原型">
+      <span class="map-seal">镜</span>
+      <span><b>镜游三河</b><small>DATA ANALYSIS MAP</small></span>
+    </a>
+    <nav aria-label="页面导航">
+      <a href="./index.html">实验原型</a>
+      <a class="is-current" href="./analysis-map.html">数据分析地图</a>
+      <a href="./downloads/三河古镇_小红书地点地图分析_20261004.xlsx" download>下载数据表</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="map-hero">
+      <div>
+        <span class="eyebrow">FIXED-SAMPLE SPATIAL EVIDENCE · 2026</span>
+        <h1>134篇固定样本，<br><em>到底提到了古镇哪里？</em></h1>
+        <p>把小红书文本中的明确地点映射到真实地图。这里展示的是样本内地点提及频次，不是客流、真实热度或全部游客偏好。</p>
+      </div>
+      <div class="hero-note">
+        <span>先看证据边界</span>
+        <strong>13 / 86</strong>
+        <p>纳入访客分析的笔记中，只有 13 篇现有文本写出了明确地点。其余笔记不能被当作“没有地点偏好”。</p>
+      </div>
+    </section>
+
+    <section class="metric-strip" aria-label="核心统计">
+      <article><b>134</b><span>唯一 note_id</span><small>固定检索样本</small></article>
+      <article><b>86</b><span>访客分析纳入</span><small>描述性分母之一</small></article>
+      <article><b>13</b><span>明确地点笔记</span><small>文本证据覆盖 15.1%</small></article>
+      <article><b>28</b><span>不同兴趣点</span><small>83 条笔记—地点记录</small></article>
+    </section>
+
+    <section class="analysis-shell" aria-label="交互式地点地图">
+      <aside class="control-panel">
+        <div class="panel-heading">
+          <span>MAP CONTROLS</span>
+          <h2>筛选证据</h2>
+          <p>每个点的大小来自去重笔记数。点击点位查看原笔记与坐标来源。</p>
+        </div>
+
+        <div class="control-group">
+          <label>地点类别</label>
+          <div class="category-chips" id="category-chips"></div>
+        </div>
+
+        <div class="control-group range-control">
+          <div><label for="min-count">至少被几篇笔记提及</label><output id="min-count-value">1 篇</output></div>
+          <input id="min-count" type="range" min="1" max="8" value="1" step="1">
+        </div>
+
+        <div class="control-group mode-control">
+          <label>图层表达</label>
+          <div class="segmented" role="group" aria-label="地图表达模式">
+            <button class="is-active" type="button" data-mode="bubble">气泡图</button>
+            <button type="button" data-mode="heat">热力图</button>
+          </div>
+        </div>
+
+        <label class="switch-row">
+          <span><b>只看核验点位</b><small>隐藏街区代表点与近似点</small></span>
+          <input id="verified-only" type="checkbox">
+          <i aria-hidden="true"></i>
+        </label>
+
+        <div class="filter-result"><b id="visible-count">28</b><span>个地点正在显示</span><button id="reset-view" type="button">重置</button></div>
+      </aside>
+
+      <div class="map-stage">
+        <div id="analysis-map" aria-label="三河古镇地点分布地图"></div>
+        <div class="map-key" aria-label="图例">
+          <div><i class="dot water"></i>水岸与桥梁</div>
+          <div><i class="dot culture"></i>名人故居与文化</div>
+          <div><i class="dot street"></i>古街巷</div>
+          <div><i class="dot landmark"></i>地标与服务</div>
+          <div><i class="ring exact"></i>核验点位</div>
+          <div><i class="ring approximate"></i>代表／近似点</div>
+        </div>
+        <div class="map-caution">底图：© OpenStreetMap contributors · 坐标统一为 WGS84</div>
+      </div>
+
+      <aside class="detail-panel" id="detail-panel" aria-live="polite">
+        <div class="detail-empty">正在读取地点证据…</div>
+      </aside>
+    </section>
+
+    <section class="ranking-section">
+      <div class="section-heading">
+        <div><span class="eyebrow">ALL 28 PLACES</span><h2>全部地点，不只展示 Top 5</h2></div>
+        <p>排序只用于描述这批固定样本。相同计数不强行区分先后；一篇笔记可以提及多个地点。</p>
+      </div>
+      <div class="ranking-table" id="ranking-table"></div>
+    </section>
+
+    <section class="method-section">
+      <div>
+        <span class="eyebrow">METHOD & LIMITATIONS</span>
+        <h2>这张图能说明什么，不能说明什么</h2>
+      </div>
+      <div class="method-grid">
+        <article><span>01</span><h3>计数单位</h3><p>同一篇笔记同一地点只计 1 次；一篇可提及多个地点，所以地点计数之和可以超过笔记数。</p></article>
+        <article><span>02</span><h3>两套分母</h3><p>同时给出访客样本占比（÷86）与固定样本占比（÷134），避免把筛选后的分母和原样本混用。</p></article>
+        <article><span>03</span><h3>坐标精度</h3><p>20 个地点为核验点位；8 个线状地物、街区或名称不确定地点使用代表／近似坐标，不能用于导航。</p></article>
+        <article><span>04</span><h3>照片数量</h3><p>源数据没有“照片—地点”映射，因此地点照片数不可计算。用笔记总配图数代替会制造错误精度。</p></article>
+      </div>
+      <div class="download-row">
+        <a href="./downloads/三河古镇_小红书地点地图分析_20261004.xlsx" download>下载可追溯 Excel <span>↓</span></a>
+        <a href="./downloads/三河古镇_样本内地点提及分布.pdf" download>下载论文矢量图 PDF <span>↓</span></a>
+        <a href="./downloads/三河古镇_样本内地点提及分布.png" download>下载 300 DPI PNG <span>↓</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>三河古镇硕士论文数据分析 · 固定样本描述性结果</span>
+    <span>生成日期 2026-10-04 · 坐标来源与证据链接见下载表</span>
+  </footer>
+
+  <script src="./vendor/leaflet.js"></script>
+  <script src="./vendor/leaflet-heat.js"></script>
+  <script src="./analysis-map.js"></script>
+</body>
+</html>

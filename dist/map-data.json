@@ -1,0 +1,902 @@
+{
+  "meta": {
+    "title": "三河古镇小红书固定样本地点分布",
+    "generated_date": "2026-10-04",
+    "fixed_notes": 134,
+    "visitor_included_notes": 86,
+    "explicit_location_notes": 13,
+    "poi_count": 28,
+    "counting_rule": "同一篇笔记同一地点只计1次；一篇可提及多个地点",
+    "metric_name": "样本内地点提及频次",
+    "coverage_warning": "仅13/86篇访客样本在已保存文本中出现明确地点；结果不是客流、真实热度或总体偏好。",
+    "photo_warning": "源数据没有照片—地点映射，不能计算地点照片数。",
+    "coordinate_warning": "WGS84核验点位与代表/近似点分层显示；后者不能用于精确导航或空间距离推断。"
+  },
+  "categories": [
+    "全部",
+    "水岸与桥梁",
+    "名人故居与文化",
+    "古街巷",
+    "地标与服务"
+  ],
+  "pois": [
+    {
+      "name": "小南河",
+      "category": "水岸与桥梁",
+      "note_count": 8,
+      "author_count": 8,
+      "visitor_share": 0.093,
+      "fixed_share": 0.0597,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.240538,
+      "lat": 31.512738,
+      "source_lng": 117.240538,
+      "source_lat": 31.512738,
+      "source_crs": "WGS84",
+      "coordinate_source": "OpenStreetMap 小南河线要素质心",
+      "coordinate_url": "https://www.openstreetmap.org/",
+      "coordinate_status": "线状地物代表点",
+      "precision": "representative",
+      "examples": [
+        {
+          "title": "三河古镇|被忽略的徽派水乡随拍成电影画面",
+          "author": "Lyon的电影客厅",
+          "url": "https://www.xiaohongshu.com/explore/6a7c0b410000000025007c3d"
+        },
+        {
+          "title": "三河古镇新机位，此时小南河美到封神！",
+          "author": "陈不二哇",
+          "url": "https://www.xiaohongshu.com/explore/6932e63b000000001e0399c5"
+        },
+        {
+          "title": "三河古镇极简攻略｜合肥周边一日游",
+          "author": "michill～",
+          "url": "https://www.xiaohongshu.com/explore/6a6aa6600000000013025cfc"
+        }
+      ]
+    },
+    {
+      "name": "望月阁",
+      "category": "地标与服务",
+      "note_count": 8,
+      "author_count": 8,
+      "visitor_share": 0.093,
+      "fixed_share": 0.0597,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2376257,
+      "lat": 31.5124056,
+      "source_lng": 117.243076,
+      "source_lat": 31.510412,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇|被忽略的徽派水乡随拍成电影画面",
+          "author": "Lyon的电影客厅",
+          "url": "https://www.xiaohongshu.com/explore/6a7c0b410000000025007c3d"
+        },
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "三河古镇极简攻略｜合肥周边一日游",
+          "author": "michill～",
+          "url": "https://www.xiaohongshu.com/explore/6a6aa6600000000013025cfc"
+        }
+      ]
+    },
+    {
+      "name": "杨振宁旧居",
+      "category": "名人故居与文化",
+      "note_count": 8,
+      "author_count": 8,
+      "visitor_share": 0.093,
+      "fixed_share": 0.0597,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2385018,
+      "lat": 31.5113811,
+      "source_lng": 117.243952,
+      "source_lat": 31.509387,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇|被忽略的徽派水乡随拍成电影画面",
+          "author": "Lyon的电影客厅",
+          "url": "https://www.xiaohongshu.com/explore/6a7c0b410000000025007c3d"
+        },
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "三河古镇极简攻略｜合肥周边一日游",
+          "author": "michill～",
+          "url": "https://www.xiaohongshu.com/explore/6a6aa6600000000013025cfc"
+        }
+      ]
+    },
+    {
+      "name": "一人巷",
+      "category": "古街巷",
+      "note_count": 6,
+      "author_count": 6,
+      "visitor_share": 0.0698,
+      "fixed_share": 0.0448,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2386198,
+      "lat": 31.5116581,
+      "source_lng": 117.24407,
+      "source_lat": 31.509664,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇极简攻略｜合肥周边一日游",
+          "author": "michill～",
+          "url": "https://www.xiaohongshu.com/explore/6a6aa6600000000013025cfc"
+        },
+        {
+          "title": "三河古镇｜藏在合肥的江南慢时光✨",
+          "author": "昕七天",
+          "url": "https://www.xiaohongshu.com/explore/69b03c6b00000000260321fd"
+        },
+        {
+          "title": "合肥自驾｜免费5A三河古镇太治愈✨",
+          "author": "老陈的理想生活",
+          "url": "https://www.xiaohongshu.com/explore/6a9fa955000000002603a383"
+        }
+      ]
+    },
+    {
+      "name": "三县桥",
+      "category": "水岸与桥梁",
+      "note_count": 6,
+      "author_count": 6,
+      "visitor_share": 0.0698,
+      "fixed_share": 0.0448,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2386938,
+      "lat": 31.5121281,
+      "source_lng": 117.244144,
+      "source_lat": 31.510134,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "三河古镇极简攻略｜合肥周边一日游",
+          "author": "michill～",
+          "url": "https://www.xiaohongshu.com/explore/6a6aa6600000000013025cfc"
+        },
+        {
+          "title": "三河古镇｜藏在合肥的江南慢时光✨",
+          "author": "昕七天",
+          "url": "https://www.xiaohongshu.com/explore/69b03c6b00000000260321fd"
+        }
+      ]
+    },
+    {
+      "name": "刘同兴隆庄",
+      "category": "名人故居与文化",
+      "note_count": 5,
+      "author_count": 5,
+      "visitor_share": 0.0581,
+      "fixed_share": 0.0373,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2382244,
+      "lat": 31.5162834,
+      "source_lng": 117.243675,
+      "source_lat": 31.51429,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "三河古镇极简攻略｜合肥周边一日游",
+          "author": "michill～",
+          "url": "https://www.xiaohongshu.com/explore/6a6aa6600000000013025cfc"
+        },
+        {
+          "title": "三河古镇｜经典一日游路线✨不绕路超省心‼️",
+          "author": "芥末上了头",
+          "url": "https://www.xiaohongshu.com/explore/6a3a86490000000007029994"
+        }
+      ]
+    },
+    {
+      "name": "鹊渚廊桥",
+      "category": "水岸与桥梁",
+      "note_count": 5,
+      "author_count": 5,
+      "visitor_share": 0.0581,
+      "fixed_share": 0.0373,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2396,
+      "lat": 31.511483,
+      "source_lng": 117.2396,
+      "source_lat": 31.511483,
+      "source_crs": "WGS84",
+      "coordinate_source": "OpenStreetMap 鹊渚廊桥",
+      "coordinate_url": "https://www.openstreetmap.org/",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇极简攻略｜合肥周边一日游",
+          "author": "michill～",
+          "url": "https://www.xiaohongshu.com/explore/6a6aa6600000000013025cfc"
+        },
+        {
+          "title": "三河古镇｜经典一日游路线✨不绕路超省心‼️",
+          "author": "芥末上了头",
+          "url": "https://www.xiaohongshu.com/explore/6a3a86490000000007029994"
+        },
+        {
+          "title": "三河古镇｜藏在合肥的江南慢时光✨",
+          "author": "昕七天",
+          "url": "https://www.xiaohongshu.com/explore/69b03c6b00000000260321fd"
+        }
+      ]
+    },
+    {
+      "name": "万年禅寺",
+      "category": "名人故居与文化",
+      "note_count": 3,
+      "author_count": 3,
+      "visitor_share": 0.0349,
+      "fixed_share": 0.0224,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2400962,
+      "lat": 31.5085551,
+      "source_lng": 117.245546,
+      "source_lat": 31.50656,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图“万年寺”POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "名称待核验",
+      "precision": "representative",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "三河古镇｜经典一日游路线✨不绕路超省心‼️",
+          "author": "芥末上了头",
+          "url": "https://www.xiaohongshu.com/explore/6a3a86490000000007029994"
+        },
+        {
+          "title": "📍合肥周边游 | 三河古镇一日逃离计划（攻略",
+          "author": "困困鱼爱游玩",
+          "url": "https://www.xiaohongshu.com/explore/688ca9b3000000000403d13c"
+        }
+      ]
+    },
+    {
+      "name": "仙姑楼",
+      "category": "地标与服务",
+      "note_count": 3,
+      "author_count": 3,
+      "visitor_share": 0.0349,
+      "fixed_share": 0.0224,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2388787,
+      "lat": 31.513353,
+      "source_lng": 117.244329,
+      "source_lat": 31.511359,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "三河古镇｜经典一日游路线✨不绕路超省心‼️",
+          "author": "芥末上了头",
+          "url": "https://www.xiaohongshu.com/explore/6a3a86490000000007029994"
+        },
+        {
+          "title": "📍合肥周边游 | 三河古镇一日逃离计划（攻略",
+          "author": "困困鱼爱游玩",
+          "url": "https://www.xiaohongshu.com/explore/688ca9b3000000000403d13c"
+        }
+      ]
+    },
+    {
+      "name": "仙归桥",
+      "category": "水岸与桥梁",
+      "note_count": 3,
+      "author_count": 3,
+      "visitor_share": 0.0349,
+      "fixed_share": 0.0224,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2386072,
+      "lat": 31.5181563,
+      "source_lng": 117.244058,
+      "source_lat": 31.516163,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "合肥自驾｜免费5A三河古镇太治愈✨",
+          "author": "老陈的理想生活",
+          "url": "https://www.xiaohongshu.com/explore/6a9fa955000000002603a383"
+        },
+        {
+          "title": "📍合肥周边游 | 三河古镇一日逃离计划（攻略",
+          "author": "困困鱼爱游玩",
+          "url": "https://www.xiaohongshu.com/explore/688ca9b3000000000403d13c"
+        }
+      ]
+    },
+    {
+      "name": "古西街",
+      "category": "古街巷",
+      "note_count": 3,
+      "author_count": 3,
+      "visitor_share": 0.0349,
+      "fixed_share": 0.0224,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.235595,
+      "lat": 31.514733,
+      "source_lng": 117.235595,
+      "source_lat": 31.514733,
+      "source_crs": "WGS84",
+      "coordinate_source": "OpenStreetMap 西街",
+      "coordinate_url": "https://www.openstreetmap.org/",
+      "coordinate_status": "街区代表点",
+      "precision": "representative",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "三河古镇｜经典一日游路线✨不绕路超省心‼️",
+          "author": "芥末上了头",
+          "url": "https://www.xiaohongshu.com/explore/6a3a86490000000007029994"
+        },
+        {
+          "title": "合肥自驾｜免费5A三河古镇太治愈✨",
+          "author": "老陈的理想生活",
+          "url": "https://www.xiaohongshu.com/explore/6a9fa955000000002603a383"
+        }
+      ]
+    },
+    {
+      "name": "望月桥",
+      "category": "水岸与桥梁",
+      "note_count": 3,
+      "author_count": 3,
+      "visitor_share": 0.0349,
+      "fixed_share": 0.0224,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2379707,
+      "lat": 31.5125168,
+      "source_lng": 117.243421,
+      "source_lat": 31.510523,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "登录2026央视春晚！合肥千年徽派水乡古镇",
+          "author": "Sunway榕城拾光。",
+          "url": "https://www.xiaohongshu.com/explore/69940160000000000e00d355"
+        },
+        {
+          "title": "📍合肥周边游 | 三河古镇一日逃离计划（攻略",
+          "author": "困困鱼爱游玩",
+          "url": "https://www.xiaohongshu.com/explore/688ca9b3000000000403d13c"
+        }
+      ]
+    },
+    {
+      "name": "董寅初纪念馆",
+      "category": "名人故居与文化",
+      "note_count": 3,
+      "author_count": 3,
+      "visitor_share": 0.0349,
+      "fixed_share": 0.0224,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2380583,
+      "lat": 31.5167592,
+      "source_lng": 117.243509,
+      "source_lat": 31.514766,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇|被忽略的徽派水乡随拍成电影画面",
+          "author": "Lyon的电影客厅",
+          "url": "https://www.xiaohongshu.com/explore/6a7c0b410000000025007c3d"
+        },
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "📍合肥周边游 | 三河古镇一日逃离计划（攻略",
+          "author": "困困鱼爱游玩",
+          "url": "https://www.xiaohongshu.com/explore/688ca9b3000000000403d13c"
+        }
+      ]
+    },
+    {
+      "name": "万年台",
+      "category": "地标与服务",
+      "note_count": 2,
+      "author_count": 2,
+      "visitor_share": 0.0233,
+      "fixed_share": 0.0149,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2401289,
+      "lat": 31.5115987,
+      "source_lng": 117.245579,
+      "source_lat": 31.509604,
+      "source_crs": "GCJ02",
+      "coordinate_source": "公开地图 POI",
+      "coordinate_url": "https://www.poilist.cn/poi-list-%E6%99%AF%E7%82%B9-%E5%90%88%E8%82%A5/",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "三河古镇极简攻略｜合肥周边一日游",
+          "author": "michill～",
+          "url": "https://www.xiaohongshu.com/explore/6a6aa6600000000013025cfc"
+        }
+      ]
+    },
+    {
+      "name": "二龙桥",
+      "category": "水岸与桥梁",
+      "note_count": 2,
+      "author_count": 2,
+      "visitor_share": 0.0233,
+      "fixed_share": 0.0149,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.241453,
+      "lat": 31.5101674,
+      "source_lng": 117.246903,
+      "source_lat": 31.508172,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "登录2026央视春晚！合肥千年徽派水乡古镇",
+          "author": "Sunway榕城拾光。",
+          "url": "https://www.xiaohongshu.com/explore/69940160000000000e00d355"
+        }
+      ]
+    },
+    {
+      "name": "游客中心",
+      "category": "地标与服务",
+      "note_count": 2,
+      "author_count": 2,
+      "visitor_share": 0.0233,
+      "fixed_share": 0.0149,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.239651,
+      "lat": 31.517653,
+      "source_lng": 117.239651,
+      "source_lat": 31.517653,
+      "source_crs": "WGS84",
+      "coordinate_source": "OpenStreetMap 游客接待中心",
+      "coordinate_url": "https://www.openstreetmap.org/",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "三河古镇｜经典一日游路线✨不绕路超省心‼️",
+          "author": "芥末上了头",
+          "url": "https://www.xiaohongshu.com/explore/6a3a86490000000007029994"
+        }
+      ]
+    },
+    {
+      "name": "鹤庐",
+      "category": "名人故居与文化",
+      "note_count": 2,
+      "author_count": 2,
+      "visitor_share": 0.0233,
+      "fixed_share": 0.0149,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.239869,
+      "lat": 31.5106918,
+      "source_lng": 117.245319,
+      "source_lat": 31.508697,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        },
+        {
+          "title": "三河古镇｜藏在合肥的江南慢时光✨",
+          "author": "昕七天",
+          "url": "https://www.xiaohongshu.com/explore/69b03c6b00000000260321fd"
+        }
+      ]
+    },
+    {
+      "name": "八扇街",
+      "category": "古街巷",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.23885,
+      "lat": 31.5113,
+      "source_lng": 117.23885,
+      "source_lat": 31.5113,
+      "source_crs": "WGS84",
+      "coordinate_source": "核心街区人工代表点",
+      "coordinate_url": "https://www.openstreetmap.org/",
+      "coordinate_status": "街区代表点，待现场核验",
+      "precision": "representative",
+      "examples": [
+        {
+          "title": "📍合肥周边游 | 三河古镇一日逃离计划（攻略",
+          "author": "困困鱼爱游玩",
+          "url": "https://www.xiaohongshu.com/explore/688ca9b3000000000403d13c"
+        }
+      ]
+    },
+    {
+      "name": "古码头",
+      "category": "水岸与桥梁",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.23971,
+      "lat": 31.51495,
+      "source_lng": 117.23971,
+      "source_lat": 31.51495,
+      "source_crs": "WGS84",
+      "coordinate_source": "小南河沿线人工代表点",
+      "coordinate_url": "https://www.openstreetmap.org/",
+      "coordinate_status": "近似位置，待现场核验",
+      "precision": "representative",
+      "examples": [
+        {
+          "title": "水墨入江南｜合肥三河古镇的秋天藏不住了",
+          "author": "江然凌",
+          "url": "https://www.xiaohongshu.com/explore/69356bb4000000001e005a68"
+        }
+      ]
+    },
+    {
+      "name": "合众巷",
+      "category": "古街巷",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2379093,
+      "lat": 31.5162292,
+      "source_lng": 117.24336,
+      "source_lat": 31.514236,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        }
+      ]
+    },
+    {
+      "name": "城隍庙",
+      "category": "名人故居与文化",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.240683,
+      "lat": 31.5098002,
+      "source_lng": 117.246133,
+      "source_lat": 31.507805,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        }
+      ]
+    },
+    {
+      "name": "大捷门",
+      "category": "地标与服务",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2405927,
+      "lat": 31.5130067,
+      "source_lng": 117.246043,
+      "source_lat": 31.511012,
+      "source_crs": "GCJ02",
+      "coordinate_source": "公开地图 POI",
+      "coordinate_url": "https://www.poilist.cn/poi-list-%E6%99%AF%E7%82%B9-%E5%90%88%E8%82%A5/",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇极简攻略｜合肥周边一日游",
+          "author": "michill～",
+          "url": "https://www.xiaohongshu.com/explore/6a6aa6600000000013025cfc"
+        }
+      ]
+    },
+    {
+      "name": "孙立人故居",
+      "category": "名人故居与文化",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.239181,
+      "lat": 31.5099466,
+      "source_lng": 117.244631,
+      "source_lat": 31.507952,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        }
+      ]
+    },
+    {
+      "name": "对越桥",
+      "category": "水岸与桥梁",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2372214,
+      "lat": 31.5145891,
+      "source_lng": 117.242672,
+      "source_lat": 31.512596,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "水墨入江南｜合肥三河古镇的秋天藏不住了",
+          "author": "江然凌",
+          "url": "https://www.xiaohongshu.com/explore/69356bb4000000001e005a68"
+        }
+      ]
+    },
+    {
+      "name": "游船码头",
+      "category": "水岸与桥梁",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.23993,
+      "lat": 31.51582,
+      "source_lng": 117.23993,
+      "source_lat": 31.51582,
+      "source_crs": "WGS84",
+      "coordinate_source": "小南河沿线人工代表点",
+      "coordinate_url": "https://www.openstreetmap.org/",
+      "coordinate_status": "名称泛指，待现场核验",
+      "precision": "representative",
+      "examples": [
+        {
+          "title": "终于遇到一个审美在线、不商业化的古镇了",
+          "author": "Paper喝咖啡",
+          "url": "https://www.xiaohongshu.com/explore/69f5af9d0000000035033d49"
+        }
+      ]
+    },
+    {
+      "name": "翠竹亭",
+      "category": "地标与服务",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.2376133,
+      "lat": 31.5159721,
+      "source_lng": 117.243064,
+      "source_lat": 31.513979,
+      "source_crs": "GCJ02",
+      "coordinate_source": "高德地图 POI",
+      "coordinate_url": "https://ranks.amap.com/ranking/%E5%8F%A4%E9%95%87%E5%8F%A4%E6%9D%91/%E6%9D%8E%E9%B8%BF%E7%AB%A0%E6%95%85%E5%B1%85/%E6%B8%B8%E5%AE%A2",
+      "coordinate_status": "核验点位",
+      "precision": "exact",
+      "examples": [
+        {
+          "title": "📍合肥周边游 | 三河古镇一日逃离计划（攻略",
+          "author": "困困鱼爱游玩",
+          "url": "https://www.xiaohongshu.com/explore/688ca9b3000000000403d13c"
+        }
+      ]
+    },
+    {
+      "name": "英王府",
+      "category": "名人故居与文化",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.240859,
+      "lat": 31.513002,
+      "source_lng": 117.240859,
+      "source_lat": 31.513002,
+      "source_crs": "WGS84",
+      "coordinate_source": "OpenStreetMap 英王路中心段",
+      "coordinate_url": "https://www.openstreetmap.org/",
+      "coordinate_status": "近似位置，待现场核验",
+      "precision": "representative",
+      "examples": [
+        {
+          "title": "三河古镇一日游|上过春晚的免费5A景区",
+          "author": "巧克力去哪了",
+          "url": "https://www.xiaohongshu.com/explore/69ef5a150000000023005dd7"
+        }
+      ]
+    },
+    {
+      "name": "鹊渚桥码头",
+      "category": "水岸与桥梁",
+      "note_count": 1,
+      "author_count": 1,
+      "visitor_share": 0.0116,
+      "fixed_share": 0.0075,
+      "photo_count": null,
+      "photo_count_note": "不可计算：源数据没有照片—地点映射",
+      "lng": 117.23962,
+      "lat": 31.5117,
+      "source_lng": 117.23962,
+      "source_lat": 31.5117,
+      "source_crs": "WGS84",
+      "coordinate_source": "鹊渚廊桥附近代表点",
+      "coordinate_url": "https://www.openstreetmap.org/",
+      "coordinate_status": "廊桥附近代表点",
+      "precision": "representative",
+      "examples": [
+        {
+          "title": "📍合肥周边游 | 三河古镇一日逃离计划（攻略",
+          "author": "困困鱼爱游玩",
+          "url": "https://www.xiaohongshu.com/explore/688ca9b3000000000403d13c"
+        }
+      ]
+    }
+  ]
+}
