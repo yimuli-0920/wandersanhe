@@ -135,7 +135,7 @@
     renderCategoryChips(); bindControls(); renderMap(); renderRanking(); renderDetail(data.pois[0]);
   }
 
-  fetch("./map-data.json").then(function (response) {
+  fetch("./map-data.json?v=20261005").then(function (response) {
     if (!response.ok) throw new Error("地图数据读取失败");
     return response.json();
   }).then(initialize).catch(function (error) {
